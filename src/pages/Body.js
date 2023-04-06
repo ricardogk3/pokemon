@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PokemonList from './PokemonList';
+import PokemonList from '../components/PokemonList';
 
 function Body() {
     return (

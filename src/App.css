@@ -31,8 +31,22 @@
   font-size: 2rem;
   color: #03fc4e;
 
-  animation: bigger 1s linear;
+  animation: Pokemons 1s linear;
 }
+
+.logo {
+  /* transition: transform 0.5s; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+  transform: translateX(50px);
+}
+.logo:hover:hover {
+  transform: translateX(-50px);
+}
+
+
 
 @keyframes bigger {
   from {
@@ -58,5 +72,20 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+
+
+.pokewait {
+  animation: girar-infinito 2s linear infinite;
+}
+
+@keyframes girar-infinito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
