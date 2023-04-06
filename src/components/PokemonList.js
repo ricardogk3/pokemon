@@ -89,7 +89,7 @@ const PokemonList = () => {
     const Numbers = () => {
         const numbers = Array.from({ length: Math.ceil(pokemons.length / 12) }, (_, index) => index + 1);
         return (
-            <div style={{ margin: 5, width: "93%", padding: '1%' }}>
+            <div style={{ margin: 5, width: "93%", padding: '1%',  zIndex: 6 }}>
                 {numbers.map((number, index) => (
                     <Button key={index} variant="outlined" style={{ margin: 3 }} onClick={() => setPage(number)}>{number}</Button>
                 ))}
@@ -106,7 +106,6 @@ const PokemonList = () => {
             <div className="spinner">
                 <div className="half-spinner"></div>
             </div>
-                {/* <img className='pokewait' src={pokeball} alt="Logo" style={{ maxHeight: "15vh", maxWidth: "100%", }} /> */}
         </div>;
     }
 
@@ -118,7 +117,6 @@ const PokemonList = () => {
         <div id='pklistid'>
             <Search id='pesquisa' onChange={(e) => pokemonFilter(e.target.value)}>
                 <SearchIconWrapper>
-                    {/* <SearchIcon /> */}
                     <img className='pokewait' src={pokeball} alt="Logo" style={{ maxHeight: "3vh", maxWidth: "100%", }} />
                 </SearchIconWrapper>
                 <StyledInputBase
@@ -126,7 +124,7 @@ const PokemonList = () => {
                     inputProps={{ 'aria-label': 'search' }}
                 />
             </Search>
-            <Grid container spacing={3} id='gridid' style={{ width: "95%", padding: '1%' }} justify="center" alignItems="center">
+            <Grid container spacing={3} id='gridid' style={{ width: "95%", padding: '1%', zIndex: '10' }} justify="center" alignItems="center">
                 {pokemons.slice([12 * page - 12], [12 * page]).map(poke => (
                     <Grid item xs={12} sm={6} md={4} lg={2} key={poke.id} >
                         <Box >

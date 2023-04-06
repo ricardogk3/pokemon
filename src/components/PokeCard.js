@@ -1,18 +1,13 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { Box, CardActionArea } from "@mui/material";
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { typeHandler } from "./TypeHandler";
 import { abilityHandler } from "./AbilityHandler";
 import Stats from './Stats';
@@ -41,9 +36,9 @@ export default function RecipeReviewCard({ id, name, image, types, abilities, st
   };
 
   return (
-    <div className='card'>
+    <div className='card' >
     <div className='cardinterna'>
-      <Card sx={{ maxWidth: 345 }} onClick={() => { console.log('funciona') }}>
+      <Card sx={{ maxWidth: 345 }}>
           <h3 style={{padding:2, margin:0}}>{capitalizeFirstLetter(name)}</h3>
           <h5 style={{padding:2, margin:0}}>{typeHandler(types)}</h5>
         <CardMedia

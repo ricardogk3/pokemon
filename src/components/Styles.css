@@ -1,5 +1,7 @@
 #pesquisa {
     background-color: #aaaaaa;
+    margin-bottom: 18px;
+    margin-top: 10px;
 }
 
 #carregando {
@@ -16,19 +18,6 @@
     /* background-color: #803f3f; */
 }
 
-.card2222 {
-    /* background-color: #ba1414; */
-    /* background-color: #da6464; */
-    /* background: linear-gradient(to bottom right, #f9d87b 0%, #ffc83c 50%, #f9d87b 100%);
-    max-width: 200px; */
-    /* height: 200px; */
-    /* border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-in-out;
-    padding: 10px; */
-}
 .cardinterna {
     background-image: linear-gradient(to bottom, #d9d9d9, #c2c2c2, #acacac, #959595, #7f7f7f, #686868, #525252, #3b3b3b, #363434, #525252,#686868,#7f7f7f);
     padding: 10px;
